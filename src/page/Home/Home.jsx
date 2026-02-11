@@ -6,7 +6,11 @@ const Home = () => {
     return (
         <div>
             <HeroCarousel></HeroCarousel>
+
+            <div className='max-w-7xl mx-auto'>
+
             <Products></Products>
+            </div>
         </div>
     );
 };

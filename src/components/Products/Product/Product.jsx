@@ -1,22 +1,23 @@
 import React from "react";
 
 const Product = ({ product }) => {
-  const { id, name, brand, image, category, description } = product;
+  const { name, brand, image, priceUSD  } = product;
+  console.log(product)
   return (
-    <div className="flex justify-between">
-      <div className="card bg-base-100 w-96 shadow-sm">
+    
+      <div className="card bg-base-100  shadow-sm px-5">
         <figure>
-          <img src={image} alt="Shoes" />
+          <img  src={image} className="h-50 w-full object-cover" alt="watch" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{name}</h2>
-          <p>{description}</p>
+          <h2 className="card-title text-xl">{name}</h2>
+          <h4 className="">{brand}</h4>
+          <p className="">{priceUSD}<span>$</span></p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Product Details</button>
+            <button className="btn btn-primary">Details</button>
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
