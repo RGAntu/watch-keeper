@@ -7,10 +7,12 @@ const Products = ({products}) => {
     const[showAll, setShowAll] = useState(false);
 
     useEffect(() => {
-        if(showAll){
+        if(showAll) {
             setDisplayProducts(products)
-        }
-        else{
+            if(showAll){
+                window.scrollTo(0, 0)
+            }
+        } else{
             setDisplayProducts(products.slice(0, 8))
             
         }
