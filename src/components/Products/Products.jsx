@@ -14,9 +14,25 @@ const Products = ({ products }) => {
         window.scrollTo(0, 0);
     };
 
+    // search 
+    const [search, setSearch] = useState("");
+    console.log(search)
+
     return (
-       <div>
+       <div className='py-10'>
         <h2 className='text-3xl text-center'>Feature Product</h2>
+        {/* search  */}
+        <div className='ml-5 my-5'>
+        <form >
+            <input 
+            value={setSearch}
+            onChange={ (e) => setSearch(e.target.value)}
+            type="text" 
+            placeholder='Search Product by Name'
+            className='w-2/5 border rounded-lg p-3 focus:outline-none'
+            />
+        </form>
+        </div>
 
          <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 my-5 gap-3'>
             {displayProducts.map((product) => (

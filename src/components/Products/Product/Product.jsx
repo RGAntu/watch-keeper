@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 const Product = ({ product }) => {
   const {id, name, brand, image, priceUSD  } = product;
-  console.log(product)
+  // console.log(product)
  
   
   return (
