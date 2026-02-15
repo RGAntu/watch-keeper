@@ -19,6 +19,10 @@ const Products = ({ products }) => {
     e.preventDefault();
   };
 
+  const handleChange = (e) => {
+    setSearch(e.target.value)
+  }
+
   return (
     <div className="py-10">
       <h2 className="text-3xl text-center">Feature Product</h2>
@@ -28,17 +32,13 @@ const Products = ({ products }) => {
           <input
             type="text"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={handleChange}
             placeholder="Search Product by Name"
             className="w-2/5 border rounded-lg p-3 "
           />
           <button type="submit" className="btn btn-primary rounded-lg p-6 ml-5">
             Search
           </button>
-        </form>
-
-        <form action="">
-          <input type="text" className="border" />
         </form>
       </div>
 
