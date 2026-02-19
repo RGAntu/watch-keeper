@@ -13,11 +13,13 @@ const router = createBrowserRouter([
             index: true,
             Component: Home,
             hydrateFallbackElement: <p>Products are Loading....</p>,
-            loader: () => fetch("Products.json")
+            loader: () => fetch("../Products.json")
         },
         {
           path:"productDetail/:id",
+          loader: () => fetch("../Products.json"),
           Component: ProductDetail,
+
 
 
         }
