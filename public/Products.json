@@ -15,7 +15,7 @@
     "strap": "Stainless Steel",
     "warranty": "5 Years International Warranty",
     "description": "An iconic luxury dive watch with exceptional water resistance, precision, and timeless design. Ideal for professional divers and everyday luxury wear.",
-    "image": "./watches_img/smart_watch1.jpg"
+    "image": "https://i.ibb.co.com/ynJDHK5w/smart-watch1.jpg"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
     "strap": "Stainless Steel",
     "warranty": "5 Years Manufacturer Warranty",
     "description": "A legendary luxury sports watch featuring an octagonal bezel, integrated bracelet, and fine Swiss craftsmanship.",
-    "image": "./watches_img/smart_watch2.jpg"
+    "image": "https://i.ibb.co.com/sp8Tg3sC/smart-watch2.jpg"
   },
   {
     "id": 3,
@@ -51,7 +51,7 @@
     "strap": "Stainless Steel",
     "warranty": "2 Years International Warranty",
     "description": "A highly sought-after luxury timepiece combining sporty elegance with exceptional mechanical finishing.",
-    "image": "./watches_img/smart_watch3.jpg"
+    "image": "https://i.ibb.co.com/LDZ07cXV/smart-watch3.jpg"
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
     "strap": "Leather",
     "warranty": "5 Years International Warranty",
     "description": "The legendary Moonwatch worn during NASA moon missions, featuring a precise chronograph movement.",
-    "image": "./watches_img/smart_watch4.jpg"
+    "image": "https://i.ibb.co.com/jkHGns4B/smart-watch4.jpg"
   },
   {
     "id": 5,
@@ -87,7 +87,7 @@
     "strap": "Leather",
     "warranty": "8 Years Manufacturer Warranty",
     "description": "A refined dress watch with a reversible case, combining Art Deco design with high-end Swiss watchmaking.",
-    "image": "./watches_img/smart_watch5.jpg"
+    "image": "https://i.ibb.co.com/b56cpBh0/smart-watch5.jpg"
   },
   {
     "id": 6,
@@ -105,7 +105,7 @@
     "strap": "Leather",
     "warranty": "2 Years International Warranty",
     "description": "An elegant automatic dress watch offering classic design and dependable Swiss engineering.",
-    "image": "./watches_img/smart_watch6.jpg"
+    "image": "https://i.ibb.co.com/4Z2K84Sx/smart-watch6.jpg"
   },
   {
     "id": 7,
@@ -123,7 +123,7 @@
     "strap": "Stainless Steel",
     "warranty": "2 Years International Warranty",
     "description": "A modern sports watch with a retro-inspired design and an impressive 80-hour power reserve.",
-    "image": "./watches_img/smart_watch7.jpg"
+    "image": "https://i.ibb.co.com/tdhtBmR/smart-watch7.jpg"
   },
   {
     "id": 8,
@@ -141,7 +141,7 @@
     "strap": "Rubber",
     "warranty": "2 Years International Warranty",
     "description": "A professional-grade dive watch designed for durability, clarity, and underwater performance.",
-    "image": "./watches_img/smart_watch8.jpg"
+    "image": "https://i.ibb.co.com/xKfmg6kJ/smart-watch8.jpg"
   },
   {
     "id": 9,
@@ -159,7 +159,7 @@
     "strap": "Leather",
     "warranty": "1 Year International Warranty",
     "description": "A stylish mechanical watch inspired by cocktail culture, known for its beautiful textured dial.",
-    "image": "./watches_img/watch1.jpg"
+    "image": "https://i.ibb.co.com/rR7Df338/watch1.jpg"
   },
   {
     "id": 10,
@@ -177,7 +177,7 @@
     "strap": "Rubber",
     "warranty": "5 Years Manufacturer Warranty",
     "description": "A solar-powered diver watch requiring no battery changes, built for reliability and adventure.",
-    "image": "./watches_img/watch2.jpg"
+    "image": "https://i.ibb.co.com/jPgDcDqH/watch2.jpg"
   },
   {
     "id": 11,
@@ -195,7 +195,7 @@
     "strap": "Resin",
     "warranty": "2 Years Manufacturer Warranty",
     "description": "An ultra-tough shock-resistant watch designed for sports, outdoor activities, and everyday wear.",
-    "image": "./watches_img/watch3.jpg"
+    "image": "https://i.ibb.co.com/PyDYXd9/watch3.jpg"
   },
   {
     "id": 12,
@@ -213,7 +213,7 @@
     "strap": "Stainless Steel",
     "warranty": "2 Years Manufacturer Warranty",
     "description": "A sporty chronograph with a bold design, offering accurate timekeeping and modern styling.",
-    "image": "./watches_img/watch4.jpg"
+    "image": "https://i.ibb.co.com/Y7BXJFMZ/watch4.jpg"
   }
 
 ]
