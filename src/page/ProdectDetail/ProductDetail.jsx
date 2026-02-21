@@ -44,6 +44,9 @@ const ProductDetail = () => {
         <p>Type: {type}</p>
         <p>Water Resistance: {waterResistance}</p>
         <p>Warranty: {warranty}</p>
+
+
+        <button className="btn btn-primary mt-4">Add to cart</button>
       </div>
     </div>
   );
