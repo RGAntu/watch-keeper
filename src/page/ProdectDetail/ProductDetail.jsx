@@ -1,5 +1,7 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
+import Button from "../../components/button/Button";
+import { FaBookmark, FaCartShopping } from "react-icons/fa6";
 
 const ProductDetail = () => {
   const data = useLoaderData();
@@ -40,13 +42,15 @@ const ProductDetail = () => {
         <p>Movement: {movement}</p>
         <p className="">Description: {description}</p>
         <p>Size: {size}</p>
-        <p>Strap: { strap}</p>
+        <p>Strap: {strap}</p>
         <p>Type: {type}</p>
         <p>Water Resistance: {waterResistance}</p>
         <p>Warranty: {warranty}</p>
 
-
-        <button className="btn btn-primary mt-4">Add to cart</button>
+        <div>
+          <Button label={<FaCartShopping />}> </Button>
+          <Button label={<FaBookmark />}></Button>
+        </div>
       </div>
     </div>
   );

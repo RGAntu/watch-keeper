@@ -4,6 +4,7 @@ import Home from "../page/Home/Home";
 import Root from "../layout/Root";
 import ProductDetail from "../page/ProdectDetail/ProductDetail";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
