@@ -2,6 +2,7 @@ import React from "react";
 import { useLoaderData, useParams } from "react-router";
 import Button from "../../components/button/Button";
 import { FaBookmark, FaCartShopping } from "react-icons/fa6";
+import { addFavorite } from "../../utils";
 
 const ProductDetail = () => {
   const data = useLoaderData();
@@ -27,6 +28,11 @@ const ProductDetail = () => {
     warranty,
     waterResistance,
   } = singleProduct;
+
+  const handleFavorite = () => {
+  addFavorite(singleProduct)
+  }
+
   return (
     <div className="flex flex-col md:flex-row lg:flex-row max-w-7xl mx-auto gap-x-8 my-5 justify-center ">
       <div className="col-span-1">
@@ -49,7 +55,7 @@ const ProductDetail = () => {
 
         <div>
           <Button label={<FaCartShopping />}> </Button>
-          <Button label={<FaBookmark />}></Button>
+          <Button onClick={handleFavorite} label={<FaBookmark />} />
         </div>
       </div>
     </div>
