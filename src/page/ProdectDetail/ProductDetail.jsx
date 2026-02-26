@@ -56,6 +56,7 @@ const ProductDetail = () => {
         <div>
           <Button label={<FaCartShopping />}> </Button>
           <Button onClick={handleFavorite} label={<FaBookmark />} />
+          
         </div>
       </div>
     </div>

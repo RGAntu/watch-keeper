@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router";
 import Home from "../page/Home/Home";
 import Root from "../layout/Root";
 import ProductDetail from "../page/ProdectDetail/ProductDetail";
+import Favorite from "../page/Favorite/Favorite";
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,12 @@ const router = createBrowserRouter([
 
 
 
+        },
+        {
+          path:"favorite",
+          Component: Favorite
         }
+      
       
     ]
   },

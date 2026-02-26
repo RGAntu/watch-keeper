@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router';
+import { FaBookmark } from "react-icons/fa6";
 
 const Navbar = () => {
 
     const navLinks = (
         <>
         <NavLink to="/">Home</NavLink>
+        
         </>
     )
     return (
@@ -33,7 +35,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <Link to="/favorite"><FaBookmark /></Link>
   </div>
 </div>
     );
