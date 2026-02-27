@@ -26,3 +26,12 @@ export const addFavorite = (product) => {
   localStorage.setItem("favorite", JSON.stringify(favorites));
   // console.log(favorites, typeof favorites)
 };
+
+
+
+// remove 
+export const removeFavorite = id => {
+  const favorites = getFavorites();
+  const remainingFavorites =  favorites.filter( product => product.id !== id)
+  localStorage.setItem('favorite', JSON.stringify(remainingFavorites))
+}

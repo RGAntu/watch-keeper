@@ -1,14 +1,21 @@
 import React from "react";
+import { MdDelete } from "react-icons/md";
 import { Link } from "react-router";
 
-const Product = ({ product }) => {
+const Product = ({ product, deleteAble }) => {
   const {id, name, brand, image, priceUSD  } = product;
   // console.log(product)
  
   
   return (
     
-      <div className="card bg-base-100  shadow-sm px-5">
+      <div className="card bg-base-100  shadow-sm px-5 relative">
+        
+<div>
+ {
+  deleteAble &&  <MdDelete className="text-3xl text-red-500 absolute top-0 right-5" />
+ }
+</div>
         <figure>
           <img  src={image} className="h-50 w-full object-cover" alt="watch" />
         </figure>
