@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router";
 import Button from "../../components/button/Button";
 import { FaBookmark, FaCartShopping } from "react-icons/fa6";
-import { addFavorite } from "../../utils";
+import { addCart, addFavorite } from "../../utils";
+import { CartContext } from "../../providers/Contexts";
 
 const ProductDetail = () => {
+  const {setCart} = useContext(CartContext);
   const data = useLoaderData();
   const { id } = useParams();
   // console.log(id)
@@ -33,6 +35,10 @@ const ProductDetail = () => {
   addFavorite(singleProduct)
   }
 
+  const handleCart = () => {
+    addCart(singleProduct)
+  }
+
   return (
     <div className="flex flex-col md:flex-row lg:flex-row max-w-7xl mx-auto gap-x-8 my-5 justify-center ">
       <div className="col-span-1">
@@ -54,7 +60,7 @@ const ProductDetail = () => {
         <p>Warranty: {warranty}</p>
 
         <div>
-          <Button label={<FaCartShopping />}> </Button>
+          <Button onClick={ handleCart } label={<FaCartShopping />}> </Button>
           <Button onClick={handleFavorite} label={<FaBookmark />} />
           
         </div>

@@ -4,6 +4,7 @@ import Home from "../page/Home/Home";
 import Root from "../layout/Root";
 import ProductDetail from "../page/ProdectDetail/ProductDetail";
 import Favorite from "../page/Favorite/Favorite";
+import Cart from "../page/Cart/Cart";
 
 
 const router = createBrowserRouter([
@@ -14,12 +15,13 @@ const router = createBrowserRouter([
         {
             index: true,
             Component: Home,
-            hydrateFallbackElement: <p>Products are Loading....</p>,
+            hydrateFallbackElement: <p className="text-center py-12">Products are Loading....</p>,
             loader: () => fetch("../Products.json")
         },
         {
           path:"productDetail/:id",
           loader: () => fetch("../Products.json"),
+          hydrateFallbackElement: <p className="text-center py-12">Products are Loading....</p>,
           Component: ProductDetail,
 
 
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
         {
           path:"favorite",
           Component: Favorite
+        },
+        {
+          path:"cart",
+          Component: Cart
         }
       
       

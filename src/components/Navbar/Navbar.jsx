@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router';
 import { FaBookmark } from "react-icons/fa6";
+import { FaShoppingCart } from "react-icons/fa";
 import { CartContext } from '../../providers/Contexts';
 
 const Navbar = () => {
@@ -40,6 +41,13 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     <Link to="/favorite"><FaBookmark /></Link>
+    <Link to="/cart" className='ml-5'>
+    <div className='flex items-center'>
+      <p><FaShoppingCart size={20}/></p>
+    <p className='ml-3'>{cart.length}</p>
+    </div>
+    </Link>
+
   </div>
 </div>
     );
