@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useLoaderData, useParams } from "react-router";
 import Button from "../../components/button/Button";
 import { FaBookmark, FaCartShopping } from "react-icons/fa6";
-import { addCart, addFavorite } from "../../utils";
+import { addCart, addFavorite, getCart } from "../../utils";
 import { CartContext } from "../../providers/Contexts";
 
 const ProductDetail = () => {
@@ -37,6 +37,8 @@ const ProductDetail = () => {
 
   const handleCart = () => {
     addCart(singleProduct)
+
+    setCart(getCart())
   }
 
   return (

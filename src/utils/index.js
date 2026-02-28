@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 
 // Favorite 
 export const getFavorites = () => {
@@ -23,6 +24,7 @@ export const addFavorite = (product) => {
   }
 
   favorites.push(product);
+  toast.success("Product Added Successfully")
   localStorage.setItem("favorite", JSON.stringify(favorites));
   // console.log(favorites, typeof favorites)
 };
@@ -34,6 +36,7 @@ export const removeFavorite = id => {
   const favorites = getFavorites();
   const remainingFavorites =  favorites.filter( product => product.id !== id)
   localStorage.setItem('favorite', JSON.stringify(remainingFavorites))
+   toast.success("Removed Successfully")
 }
 
 
@@ -64,6 +67,7 @@ export const addCart = (product) => {
   }
 
   carts.push(product);
+  toast.success("Product Added Successfully")
   localStorage.setItem("cart", JSON.stringify(carts));
   // console.log(favorites, typeof favorites)
 };
@@ -75,4 +79,5 @@ export const removeCart = id => {
   const carts = getCart();
   const remainingCarts =  carts.filter( product => product.id !== id)
   localStorage.setItem('cart', JSON.stringify(remainingCarts))
+  toast.success("Removed Successfully")
 }
