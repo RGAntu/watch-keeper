@@ -2,7 +2,8 @@ import React from "react";
 import { MdDelete } from "react-icons/md";
 import { Link } from "react-router";
 
-const Product = ({ product, deleteAble }) => {
+
+const Product = ({ product, deleteAble, handleDelete }) => {
   const {id, name, brand, image, priceUSD  } = product;
   // console.log(product)
  
@@ -11,7 +12,7 @@ const Product = ({ product, deleteAble }) => {
     
       <div className="card bg-base-100  shadow-sm px-5 relative">
         
-<div>
+<div onClick={() => handleDelete(id)}>
  {
   deleteAble &&  <MdDelete className="text-3xl text-red-500 absolute top-0 right-5" />
  }
