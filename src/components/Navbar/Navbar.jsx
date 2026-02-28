@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router';
 import { FaBookmark } from "react-icons/fa6";
+import { CartContext } from '../../providers/Contexts';
 
 const Navbar = () => {
+
+  const {cart} = useContext(CartContext)
+  console.log(cart)
 
     const navLinks = (
         <>
