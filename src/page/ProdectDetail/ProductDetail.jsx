@@ -16,7 +16,7 @@ const ProductDetail = () => {
   const {
     image,
     availability,
-
+name,
     brand,
     category,
     color,
@@ -47,7 +47,8 @@ const ProductDetail = () => {
         <img src={image} className="w-[25rem] rounded-lg p-5" alt={id} />
       </div>
       <div className="col-span-1 p-5 ">
-        <h1 className="text-3xl">Name: {brand}</h1>
+        <h1 className="text-3xl">Name: {name}</h1>
+        <h3 className="text-3xl">Brand: {brand}</h3>
         <h2 className="text-xl">Price: ${priceUSD}</h2>
         <p>Color: {color}</p>
         <p>Category: {category}</p>

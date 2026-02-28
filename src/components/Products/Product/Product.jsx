@@ -24,7 +24,7 @@ const Product = ({ product, deleteAble, handleDelete }) => {
           <span>$</span>
         </p>
         <div className="card-actions justify-end">
-          <Link to={`productDetail/${id}`}>
+          <Link to={`/productDetail/${id}`}>
             <button className="btn btn-primary">Details</button>
           </Link>
         </div>

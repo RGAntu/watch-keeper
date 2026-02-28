@@ -1,6 +1,6 @@
 import toast from "react-hot-toast";
 
-// Favorite 
+// Favorite
 export const getFavorites = () => {
   try {
     const data = localStorage.getItem("favorite");
@@ -16,7 +16,7 @@ export const getFavorites = () => {
 export const addFavorite = (product) => {
   const favorites = getFavorites();
 
-  const isExist = favorites.some(p => p.id === product.id);
+  const isExist = favorites.some((p) => p.id === product.id);
 
   if (isExist) {
     alert("Phone is already added");
@@ -24,25 +24,20 @@ export const addFavorite = (product) => {
   }
 
   favorites.push(product);
-  toast.success("Product Added Successfully")
+  toast.success("Product Added Successfully");
   localStorage.setItem("favorite", JSON.stringify(favorites));
   // console.log(favorites, typeof favorites)
 };
 
-
-
-// remove 
-export const removeFavorite = id => {
+// remove
+export const removeFavorite = (id) => {
   const favorites = getFavorites();
-  const remainingFavorites =  favorites.filter( product => product.id !== id)
-  localStorage.setItem('favorite', JSON.stringify(remainingFavorites))
-   toast.success("Removed Successfully")
-}
+  const remainingFavorites = favorites.filter((product) => product.id !== id);
+  localStorage.setItem("favorite", JSON.stringify(remainingFavorites));
+  toast.success("Removed Successfully");
+};
 
-
-
-
-// Cart 
+// Cart
 
 export const getCart = () => {
   try {
@@ -59,7 +54,7 @@ export const getCart = () => {
 export const addCart = (product) => {
   const carts = getCart();
 
-  const isExist = carts.some(p => p.id === product.id);
+  const isExist = carts.some((p) => p.id === product.id);
 
   if (isExist) {
     alert("Phone is already added");
@@ -67,17 +62,15 @@ export const addCart = (product) => {
   }
 
   carts.push(product);
-  toast.success("Product Added Successfully")
+  toast.success("Product Added Successfully");
   localStorage.setItem("cart", JSON.stringify(carts));
   // console.log(favorites, typeof favorites)
 };
 
-
-
-// remove 
-export const removeCart = id => {
+// remove
+export const removeCart = (id) => {
   const carts = getCart();
-  const remainingCarts =  carts.filter( product => product.id !== id)
-  localStorage.setItem('cart', JSON.stringify(remainingCarts))
-  toast.success("Removed Successfully")
-}
+  const remainingCarts = carts.filter((product) => product.id !== id);
+  localStorage.setItem("cart", JSON.stringify(remainingCarts));
+  toast.success("Removed Successfully");
+};
