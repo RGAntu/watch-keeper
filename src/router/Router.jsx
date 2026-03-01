@@ -5,11 +5,13 @@ import Root from "../layout/Root";
 import ProductDetail from "../page/ProdectDetail/ProductDetail";
 import Favorite from "../page/Favorite/Favorite";
 import Cart from "../page/Cart/Cart";
+import Error from "../components/Error/Error";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
+    ErrorBoundary: Error,
     Component: Root,
     children:[
         {

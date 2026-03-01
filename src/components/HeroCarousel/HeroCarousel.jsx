@@ -5,7 +5,7 @@ const HeroCarousel = () => {
     <div className="carousel w-full h-[80vh] object-cover">
       <div id="slide1" className="carousel-item relative w-full">
         <img
-          src="../../../public/watch01.jpg"
+          src="https://i.ibb.co.com/ynJDHK5w/smart-watch1.jpg"
           className="w-full object-cover"
         />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -19,7 +19,7 @@ const HeroCarousel = () => {
       </div>
       <div id="slide2" className="carousel-item relative w-full">
         <img
-          src="../../../public/watch02.jpg"
+          src="https://i.ibb.co.com/jkHGns4B/smart-watch4.jpg"
           className="w-full object-cover"
         />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
@@ -33,7 +33,7 @@ const HeroCarousel = () => {
       </div>
       <div id="slide3" className="carousel-item relative w-full">
         <img
-          src="../../../public/watch03.jpg"
+          src="https://i.ibb.co.com/LDZ07cXV/smart-watch3.jpg"
           className="w-full object-cover"
         />
         <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
